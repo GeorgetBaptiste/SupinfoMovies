@@ -1,0 +1,193 @@
+:root {
+    --font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --primary-color: #191919;
+    --secondary-color: red;
+    --tertiary-color: #f4f3fc;
+}
+
+body {
+    font: 1.1em var(--font);
+}
+
+main {
+    margin: 10em 20%;
+}
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font: bold 1.1em var(--font);
+}
+
+header nav a:hover {
+    color: #DDD;
+}
+
+header .logo {
+    width: 12%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5%;
+    padding-right: 2%;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header .nav-left {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-right {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .nav-right .inscription {
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    padding: 0.5em;
+}
+
+header .searchbar {
+    width: 35%;
+    text-align: center;
+}
+
+header .searchbar input {
+    width: 80%;
+    border: 0px;
+    border-radius: 50px;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    font-size: 1em;
+}
+
+h1 {
+    font: bold 4em var(--font);
+}
+
+h2 {
+    font: bold 2.5em var(--font);
+}
+
+h3 {
+    font: bold 1.2em var(--font);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.wrapper .element-film {
+    padding: 2em 8%;
+}
+
+.wrapper .element-film img {
+    height: 20em;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.wrapper .element-film .content {
+    text-align: center;
+    margin: 0 15%;
+}
+
+.wrapper .element-film .content .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    margin-top: 1em;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font: bold 1.1em var(--font);
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+button:hover {
+    color: #DDD;
+}
+
+.info-film .content {
+    display: flex;
+}
+
+.info-film .content .image {
+    width: 40%;
+}
+
+.info-film .content .image img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.info-film .content .info {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.info-film .content .info .prix {
+    font-size: xx-large;
+}
+
+.basket {
+    margin: 10em 30%;
+}
+
+.basket .element {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #AAA;
+}
+
+.basket .element img {
+    height: 6em;
+    border-radius: 10px;
+}
+
+.basket .element p {
+    font-size: x-large;
+}
+
+.basket .element button {
+    margin: 0;
+}
+
+.basket .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basket .total p {
+    font-size: x-large;
+}
